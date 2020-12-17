@@ -9,6 +9,7 @@ import (
 
 func main() {
 
-	fmt.Println("Starting list")
+	fmt.Println("\u2610")
+	fmt.Println("\u2611")
 
 }
