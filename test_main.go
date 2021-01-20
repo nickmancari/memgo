@@ -29,6 +29,21 @@ func readFile( filename string ) []string {
 	return tmp
 }
 
+func writeFile( filename string, lines []string ) {
+	file, err := os.Create( filename )
+	if err != nil {
+		panic( "could not open file" )
+	}
+	defer file.Close()
+
+	w := bufio.NewWriter( file )
+	defer w.Flush()
+	
+	for _, each := range lines {
+		fmt.Fprint( w, each + "\n" )
+	}
+}
+
 func main() {
 	fmt.Println(check + " Done")
 	fmt.Println(uncheck)
