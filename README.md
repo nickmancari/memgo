@@ -5,5 +5,3 @@
 <p align='center'>Learning project</p>
 
 # To-Do:
-- [ ] CRUD functionality
-- [ ] Portability
