@@ -4,4 +4,7 @@
 
 <p align='center'>Learning project</p>
 
-# To-Do:
+# Synopsis:
+* Program creates a markdown file that stores a list of todo items that you define
+* Input is taken directly from the command line when you initiate the program
+* To close and save the file in the program type a `.` on a new line
