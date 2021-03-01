@@ -46,6 +46,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("%s You're TODO List : \n", fname)
+	fmt.Printf("%s Your TODO List : \n", fname)
 	fmt.Println(string(textin))
 }
