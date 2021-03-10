@@ -6,6 +6,7 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
+	"github.com/fatih/color"
 )
 
 func main() {
@@ -49,5 +50,6 @@ func main() {
 		panic(err)
 	}
 	fmt.Printf("%s Your TODO List : \n", fname)
-	fmt.Println(string(textin))
+	green := color.New(color.FgGreen).PrintFunc()
+	green(string(textin))
 }
