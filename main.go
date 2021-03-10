@@ -15,7 +15,8 @@ func main() {
 	//take user input and print it to "todo.md" file
 	textin, err := ioutil.ReadFile(fname)
 	if err == nil {
-		fmt.Println(string(textin))
+		cyan := color.New(color.FgCyan).PrintFunc()
+		cyan(string(textin))
 	}
 	
 	var userInput []string
