@@ -37,7 +37,9 @@ func main() {
 	if err == nil {
 		fmt.Println("Saving Your Tasks & Closing")
 		for _, eachLine := range userInput {
-			io.WriteString(f, eachLine)
+			l := eachLine
+			index := 0
+			io.WriteString(f, "[ ] " + l[index:])
 		}
 	}
 	
