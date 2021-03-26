@@ -50,7 +50,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("%s Your TODO List : \n", fname)
+	fmt.Println( "Your TODO List : \n")
 	green := color.New(color.FgGreen).PrintFunc()
 	green(string(textin))
 }
