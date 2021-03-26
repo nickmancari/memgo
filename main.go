@@ -29,6 +29,9 @@ func main() {
 		if line == "." {
 			break
 		}
+		if line == "-" {
+			continue
+		}
 		userInput = append(userInput, line+"\n")
 	}
 	
